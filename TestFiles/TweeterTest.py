@@ -32,5 +32,6 @@ for location in trendss:
         if count % 10 == 0:
             break
 
-json_trends = json.dumps(trend_list)
+dict_trend_list = dict(list(enumerate(trend_list)))
+json_trends = json.dumps(dict_trend_list)
 print(json_trends)
