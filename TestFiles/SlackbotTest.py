@@ -10,8 +10,9 @@ slack = Slacker('xoxb-410883848613-412108123414-7pqKJ0y8dgrCv1S9EtBSHa43')
 def postTopTen():
     tel = getTopTen()
     format_tel = ("\n".join(tel))
-    print(format_tel)
+   # print(format_tel)
     return format_tel
+
 
 
 #function to get top 10
@@ -43,4 +44,6 @@ def getTopTen():
     #dict_trend_list = dict(list(enumerate(trend_list)))
     return trend_list
 
-slack.chat.post_message('#general', postTopTen())
+
+def postbot():
+    slack.chat.post_message('#assignment1', postTopTen())
