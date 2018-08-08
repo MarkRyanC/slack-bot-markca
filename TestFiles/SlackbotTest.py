@@ -4,7 +4,7 @@ from tweepy import OAuthHandler
 from slacker import Slacker
 
 
-slack = Slacker('xoxb-410883848613-412108123414-7pqKJ0y8dgrCv1S9EtBSHa43')
+slack = Slacker('xoxb-408130882743-411197131792-2sEiVyProPgSrsbTKwfIdqSZ')
 
 
 def postTopTen():

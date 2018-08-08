@@ -51,7 +51,7 @@ def handle_command(command, channel):
     # Finds and executes the given command, filling in response
     response = None
     if command.startswith(EXAMPLE_COMMAND):
-        response = "Sure...write some more code then I can do that!"
+        response = "Type '@markBOT post' to show top 10 trending"
     #if mesage = post
     if command.startswith(BOT_MSG):
         response = SlackbotTest.postTopTen()
